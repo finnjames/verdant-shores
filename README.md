@@ -14,8 +14,9 @@ If this text is showing up, it means syncing is working :)
 
 * Installed libraries `pyserial` and `keyboard`. The latter is only for command line interface.
 	* `pip install -U pyserial --user`
-
 	* `pip install -U keyboard --user`
+
+* A short introduction to the key module `pyserial`: [Pyserial](https://pythonhosted.org/pyserial/shortintro.html)
 
 ### Example Python programs from DataQ
 
