@@ -30,21 +30,6 @@ import serial.tools.list_ports
 import keyboard
 import time
 
-"""
-Uncomment the slist tuple depending upon the hardware model you're using. 
-You can modify the example tuples to change the measurement configuration
-as needed. Refer to the instrument's protocol for details. Note that 
-only one slist tuple can be enabled at a time. 
-"""
-""" 
-slist for models DI-1120 and DI-4208
-0x0300 = Analog channel 0, ±10 V range
-0x0401 = Analog channel 1, ±5 V range
-0x0709 = Rate input, 0-500 Hz range
-0x000A = Counter input
-"""
-#slist = [0x0300,0x0401,0x0709,0x000A]
-
 """ 
 slist for model DI-4108
 0x0000 = Analog channel 0, ±10 V range
@@ -54,40 +39,8 @@ slist for model DI-4108
 """
 slist = [0x0000,0x0101,0x0709,0x000A]
 
-""" 
-slist for model DI-2108
-0x0000 = Analog channel 0, ±10 V range
-0x0001 = Analog channel 1, ±10 V range
-0x0709 = Rate input, 0-500 Hz range
-0x000A = Counter input
-"""
-# slist = [0x0000,0x0001,0x0709,0x000A]
-
-""" 
-slist for model DI-4718B (untested, but should work)
-0x0000 = Analog channel 0, ±5 V range
-0x0001 = Analog channel 1, ±5 V range
-"""
-#slist = [0x0000,0x0001]
-
-"""
-Uncomment an analog_ranges tuple depending upon the hardware model you're using. 
-Note that only one can be enabled at a time. 
-The first item in the tuple is the lowest gain code (e.g. ±100 V range = gain code 0)
-for the DI-4208. Some instrument models do not support programmable gain, so 
-their tuples contain only one value (e.g. model DI-2108.)
-"""
-# Analog ranges for models DI-4208 and -1120
-#analog_ranges = tuple((100,50,20,10,5,2))
-
 # Analog ranges for model DI-4108
 analog_ranges = tuple((10,5,2,1,0.5,0.2))
-
-# Analog ranges for model DI-2108 (fixed ±10 V measurement range)
-# analog_ranges = [10]
-
-# Analog ranges for model DI-4718B (fixed ±5 V measurement range)
-#analog_ranges = [5]
 
 """
 Define a tuple that contains an ordered list of rate measurement ranges supported by the hardware. 
@@ -109,7 +62,7 @@ def discovery():
     # Get a list of active com ports to scan for possible DATAQ Instruments devices
     available_ports = list(serial.tools.list_ports.comports())
     # Will eventually hold the com port of the detected device, if any
-    hooked_port = "" 
+    hooked_port = ""
     for p in available_ports:
         # Do we have a DATAQ Instruments device?
         if ("VID:PID=0683" in p.hwid):
@@ -248,7 +201,8 @@ while True:
 
             elif function == 9:
                 # Working with the Rate input channel
-                result = (int.from_bytes(bytes,byteorder='little', signed=True) + 32768) / 65535 * (range_table[slist_pointer])
+                result = ((int.from_bytes(bytes,byteorder='little', signed=True) + 32768) / 
+                          65535 * (range_table[slist_pointer]))
                 output_string = output_string + "{: 3.1f}, ".format(result)
 
             else:
