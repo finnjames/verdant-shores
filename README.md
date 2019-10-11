@@ -1,9 +1,6 @@
 # verdant-shores
 
-ERIRA tech port, you're welcome nerds
-
-If this text is showing up, it means syncing is working :)
-
+Python rewrite of the 40' telescope interaction software. Uses PyQt for a GUI.
 
 ## Python
 
