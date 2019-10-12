@@ -1,3 +1,10 @@
+"""
+This module includes a Tars class that encapsulate a serialpy object and provides
+simple methods for initializing, starting, stopping, resetting, and reading from
+the DATAQ device connected via a USB serial connection. The module also includes
+a few helper functions relevant to the tasks.
+"""
+
 import serial
 import serial.tools.list_ports
 import time
@@ -86,6 +93,11 @@ def main():
     device = Tars(device_name)
 
     device.init()
+    time.sleep(3)
+    device.start()
+
+    while(True):
+        device.read_all()
 
 if __name__ == "__main__":
     main()
