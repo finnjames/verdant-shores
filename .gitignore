@@ -1,5 +1,6 @@
 # virtualenv
 /artoo_electron/env/
+.env
 
 # macOS
 .DS_Store
