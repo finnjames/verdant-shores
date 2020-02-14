@@ -2,6 +2,7 @@
 /artoo_electron/env/
 .env
 env
+win-env
 
 # macOS
 .DS_Store
