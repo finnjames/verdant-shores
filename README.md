@@ -1,6 +1,6 @@
 # verdant-shores
 
-A data acquisition software for the 40-foot radio telescope in the National Radio Astronomy Observatory. This software is part of the ERIRA program. 
+A data acquisition software for the 40-foot radio telescope in the [National Radio Astronomy Observatory](https://public.nrao.edu/). This software is part of the [ERIRA](https://www.danreichart.com/erira) program. 
 
 ## Dependencies
 
