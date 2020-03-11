@@ -1,4 +1,4 @@
-# verdant-shores
+# verdant-shores 🏞️
 
 A data acquisition software for the 40-foot radio telescope in the [National Radio Astronomy Observatory](https://public.nrao.edu/). This software is part of the [ERIRA](https://www.danreichart.com/erira) program. 
 
@@ -8,11 +8,17 @@ We uses `PyQt` for GUI and `pySerial` for communication to the data collection h
 
 ## Setting Up
 
-Set up a `virtualenv` virtual environment
+You will need to create a Python 3.7.6 virtual environment, such as through `venv` or `virtualenv`
+
+### `virtualenv`
+Set up the virtual environment
 ```
 $ virtualenv env --python=python3
 ```
-Activate `virtualenv`
+```
+$ python -m venv env
+```
+Activate `virtualenv` or `venv`
 
 ```
 $ source ./env/bin/activate
