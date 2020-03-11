@@ -10,8 +10,7 @@ We uses `PyQt` for GUI and `pySerial` for communication to the data collection h
 
 You will need to create a Python 3.7.6 virtual environment, such as through `venv` or `virtualenv`
 
-### `virtualenv`
-Set up the virtual environment
+Set up the virtual environment, choosing virtualenv or venv
 ```
 $ virtualenv env --python=python3
 ```
