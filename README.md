@@ -42,3 +42,5 @@ $ pip install -r requirements.txt
 	* [Change to CDC](https://www.dataq.com/blog/data-acquisition/usb-daq-products-support-libusb-cdc/)
 
 * A short introduction to [pySerial](https://pythonhosted.org/pyserial/shortintro.html)
+
+![Interferometry](misc/interferometry.png)
