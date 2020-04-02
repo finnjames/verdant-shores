@@ -4,7 +4,7 @@ A data acquisition software for the 40-foot radio telescope in the [National Rad
 
 ## Dependencies
 
-We uses `PyQt` for GUI and `pySerial` for communication to the data collection hardware (DataQ)
+We uses `PyQt5` for GUI and `pySerial` for communication to the data collection hardware (DataQ)
 
 ## Setting Up
 
