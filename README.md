@@ -8,7 +8,7 @@ We uses `PyQt5` for GUI and `pySerial` for communication to the data collection 
 
 ## Setting Up
 
-You will need to create a Python 3.7.6 virtual environment, such as through `venv` or `virtualenv`
+You will need to create a Python 3.7.7 virtual environment, such as through `venv` or `virtualenv`
 
 Set up the virtual environment, choosing virtualenv or venv
 ```
