@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'misc/alert.ui'
+# Form implementation generated from reading ui file 'alert.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.1
 #

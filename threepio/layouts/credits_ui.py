@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'misc/credits.ui'
+# Form implementation generated from reading ui file 'credits.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.1
 #

@@ -1,8 +1,8 @@
 import time
 
-from ..observation import Observation, Scan, Survey, Spectrum
-from ..datapoint import DataPoint
-from ..comm import Comm
+from tools.observation import Scan, Survey, Spectrum
+from tools.datapoint import DataPoint
+
 
 def test1():
     scan = Scan()
@@ -19,7 +19,7 @@ def test1():
     datapoint = DataPoint(baseline % 86400, 1, 2, 45)
 
     for obs in [scan, survey, spectrum]:
-        obs.set_RA(baseline, baseline + 100)
+        obs.set_ra(baseline, baseline + 100)
         obs.set_dec(60, 30)
         obs.set_data_freq(10)
 

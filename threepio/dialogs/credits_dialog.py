@@ -1,12 +1,13 @@
-from PyQt5 import QtCore, QtWidgets, QtGui, QtChart
-from credits_ui import Ui_Dialog     # compiled PyQt dialogue ui
+from PyQt5 import QtWidgets
+from layouts import credits_ui
+
 
 class CreditsDialog(QtWidgets.QDialog):
     """Credits dialogue window"""
-    
+
     def __init__(self):
         QtWidgets.QWidget.__init__(self)
-        self.ui = Ui_Dialog()
+        self.ui = credits_ui.Ui_Dialog()
         self.ui.setupUi(self)
         self.setWindowTitle("Credits")
 

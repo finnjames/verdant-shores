@@ -1,18 +1,23 @@
-# verdant-shores
+# verdant-shores 🏞️
 
 A data acquisition software for the 40-foot radio telescope in the [National Radio Astronomy Observatory](https://public.nrao.edu/). This software is part of the [ERIRA](https://www.danreichart.com/erira) program. 
 
 ## Dependencies
 
-We uses `PyQt` for GUI and `pySerial` for communication to the data collection hardware (DataQ)
+We uses `PyQt5` for GUI and `pySerial` for communication to the data collection hardware (DataQ)
 
 ## Setting Up
 
-Set up a `virtualenv` virtual environment
+You will need to create a Python 3.7.7 virtual environment, such as through `venv` or `virtualenv`
+
+Set up the virtual environment, choosing virtualenv or venv
 ```
 $ virtualenv env --python=python3
 ```
-Activate `virtualenv`
+```
+$ python -m venv env
+```
+Activate `virtualenv` or `venv`
 
 ```
 $ source ./env/bin/activate
@@ -37,3 +42,5 @@ $ pip install -r requirements.txt
 	* [Change to CDC](https://www.dataq.com/blog/data-acquisition/usb-daq-products-support-libusb-cdc/)
 
 * A short introduction to [pySerial](https://pythonhosted.org/pyserial/shortintro.html)
+
+![Interferometry](misc/interferometry.png)
