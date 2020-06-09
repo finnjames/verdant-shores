@@ -8,5 +8,5 @@ data
 # macOS
 .DS_Store
 
-# vscode
+# VS Code
 .vscode
