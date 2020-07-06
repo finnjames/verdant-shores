@@ -8,17 +8,12 @@ We uses `PyQt5` for GUI and `pySerial` for communication to the data collection 
 
 ## Setting Up
 
-You will need to create a Python 3.7.7 virtual environment, such as through `venv` or `virtualenv`
-
-Set up the virtual environment, choosing virtualenv or venv
+You will need to create a Python 3.7.x virtual environment, such as through `virtualenv`
 ```
 $ virtualenv env --python=python3
 ```
-```
-$ python -m venv env
-```
-Activate `virtualenv` or `venv`
 
+Activate the virtual environment
 ```
 $ source ./env/bin/activate
 ```
@@ -43,4 +38,4 @@ $ pip install -r requirements.txt
 
 * A short introduction to [pySerial](https://pythonhosted.org/pyserial/shortintro.html)
 
-![Interferometry](misc/interferometry.png)
+![Contact](misc/contact.jpg)
