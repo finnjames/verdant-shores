@@ -1,8 +1,9 @@
-# virtualenv
+# python
 .env
 env
 env-win
 data
+__pycache__
 
 # macOS
 .DS_Store
@@ -10,10 +11,8 @@ data
 # VS Code
 .vscode
 
-# threepio
-threepio/__pycache__
-threepio/.vscode
-threepio/env
-threepio/data
-threepio/.idea
-threepio/.ycm_extra_conf.py
+# PyCharm
+.idea
+
+# YouCompleteMe
+.ycm_extra_conf
