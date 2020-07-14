@@ -1,5 +1,4 @@
 # virtualenv
-/artoo_electron/env/
 .env
 env
 env-win
@@ -10,3 +9,11 @@ data
 
 # VS Code
 .vscode
+
+# threepio
+threepio/__pycache__
+threepio/.vscode
+threepio/env
+threepio/data
+threepio/.idea
+threepio/.ycm_extra_conf.py
