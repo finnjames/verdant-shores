@@ -4,6 +4,7 @@ env
 env-win
 data
 __pycache__
+!misc/sample_data/data
 
 # macOS
 .DS_Store
