@@ -8,20 +8,31 @@ We uses `PyQt5` for GUI and `pySerial` for communication to the data collection 
 
 ## Setting Up
 
-You will need to create a Python 3.7.x virtual environment, such as through `virtualenv`
+Clone the repo and `cd` into it
 ```
-$ virtualenv env --python=python3
+$ git clone https://github.com/radiolevity/verdant-shores.git
+$ cd verdant-shores/threepio/
+```
+
+`threepio` requires Python 3.7; we recommend using a virtual environment, such as through [pipenv](https://pipenv-fork.readthedocs.io/en/latest/#install-pipenv-today)
+```
+$ pipenv install
 ```
 
 Activate the virtual environment
 ```
-$ source ./env/bin/activate
+$ pipenv shell
 ```
 
-Install dependencies
+Verify that it is using the correct version
 ```
-$ cd ./threepio/
-$ pip install -r requirements.txt
+$ python --version
+Python 3.7.8
+```
+
+Run `threepio`
+```
+python threepio.py
 ```
 
 ## DataQ Resources
