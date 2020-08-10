@@ -14,7 +14,7 @@ $ git clone https://github.com/radiolevity/verdant-shores.git
 $ cd verdant-shores/threepio/
 ```
 
-`threepio` requires Python 3.7; we recommend using a virtual environment, such as through [pipenv](https://pipenv-fork.readthedocs.io/en/latest/#install-pipenv-today)
+`threepio` requires Python 3.7; we strongly recommend using a virtual environment, such as through [pipenv](https://pipenv-fork.readthedocs.io/en/latest/#install-pipenv-today)
 ```
 $ pipenv install
 ```
