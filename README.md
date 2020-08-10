@@ -32,7 +32,7 @@ Python 3.7.8
 
 Run `threepio`
 ```
-python threepio.py
+$ python threepio.py
 ```
 
 ## DataQ Resources
