@@ -24,7 +24,7 @@ Activate the virtual environment
 $ pipenv shell
 ```
 
-Verify that it is using the correct version (any 3.7.x is fine!)
+Verify that it is using the correct version (any 3.7.x is fine)
 ```
 $ python --version
 Python 3.7.8
