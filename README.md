@@ -4,7 +4,7 @@ A data acquisition software for the 40-foot radio telescope in the [National Rad
 
 ## Dependencies
 
-We uses `PyQt5` for GUI and `pySerial` for communication to the data collection hardware (DataQ)
+**Threepio** uses `PyQt5` for GUI and `pySerial` for communication to the data collection hardware (DataQ)
 
 ## Setting Up
 
@@ -14,7 +14,7 @@ $ git clone https://github.com/radiolevity/verdant-shores.git
 $ cd verdant-shores/threepio/
 ```
 
-`threepio` requires Python 3.7; we strongly recommend using a virtual environment, such as through [pipenv](https://pipenv-fork.readthedocs.io/en/latest/#install-pipenv-today)
+**Threepio** requires Python 3.7; we strongly recommend using a virtual environment, such as through [pipenv](https://pipenv-fork.readthedocs.io/en/latest/#install-pipenv-today)
 ```
 $ pipenv install
 ```
@@ -30,7 +30,7 @@ $ python --version
 Python 3.7.8
 ```
 
-Run `threepio`
+Run
 ```
 $ python threepio.py
 ```
