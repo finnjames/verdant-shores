@@ -101,9 +101,9 @@ class Threepio(QtWidgets.QMainWindow):
         # bleeps and bloops
         self.click_sound = QtMultimedia.QSoundEffect()
         url = QtCore.QUrl()
-        self.click_sound.setSource(url.fromLocalFile("assets/beep3.wav"))
+        self.click_sound.setSource(url.fromLocalFile("assets/beep5.wav"))
         self.click_sound.setVolume(0.5)
-        # self.click_sound.play()
+        self.click_sound.play()
         self.last_beep_time = 0.0
 
         # initialize stripchart
@@ -395,7 +395,7 @@ class Threepio(QtWidgets.QMainWindow):
         if time.time() - self.last_beep_time > 1.0:
             self.click_sound.play()
             self.last_beep_time = time.time()
-        # print("beep! ", time.time())
+            print("beep! ", time.time())
 
     def closeEvent(self, event):
         """override quit action to confirm before closing"""
